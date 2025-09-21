@@ -1,0 +1,74 @@
+@font-face {
+    font-family: 'inter';
+    src: url('https://fonts.google.com/specimen/Inter');
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(0, 0%, 8%);
+    font-family: 'inter';
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: hsl(0, 0%, 12%);
+    padding: 3rem;
+    width: 300px;
+    display: block;
+}
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+#avatar {
+    border-radius: 50%;
+    width: 30%;
+    height: auto;
+}
+
+.full-name, .socials a, .header p {
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+}
+.full-name {
+    margin-bottom: 0;
+}
+.header h2 {
+   color: hsl(75, 94%, 57%);
+   font-size: 12px;
+}
+.header p {
+    font-size: 14px
+}
+
+.socials a {
+    display: block;
+    background-color:  hsl(0, 0%, 20%);
+    border-radius: 5px;
+    padding: 1rem 3rem;
+    text-align: center;
+    font-weight: 400;
+    font-size: 14px;
+    margin: 15px;
+}
+
+.socials a:hover, 
+.socials a:focus {
+    background-color: hsl(75, 94%, 57%);
+    color: hsl(0, 0%, 20%);
+    cursor: pointer;
+    outline: 0;
+}
+
+

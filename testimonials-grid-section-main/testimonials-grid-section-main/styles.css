@@ -19,7 +19,7 @@ html {
 }
 
 body {
-    font-family: 'Barlow Semi Condensed';
+    font-family: 'Barlow';
     font-size: 1.3rem;
     line-height: 1.5;
     color: var(--light-body);
@@ -166,4 +166,5 @@ body {
     .testimonal-patrick {
         grid-column: 2 / span 2;
     }
+
 }

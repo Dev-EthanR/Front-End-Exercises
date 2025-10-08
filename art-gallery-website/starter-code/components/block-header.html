@@ -1,0 +1,52 @@
+<header class="header-container">
+  <div class="black-background"></div>
+  <div class="hero-image-container">
+    <picture>
+      <source
+        srcset="
+          assets\tablet\image-hero.jpg    1x,
+          assets\tablet\image-hero@2x.jpg 2x
+        "
+        media="(min-width: 700px)"
+      />
+      <source
+        srcset="
+          assets\desktop\image-hero.jpg    1x,
+          assets\desktop\image-hero@2x.jpg 2x
+        "
+        media="(min-width: 1024px)"
+      />
+      <img
+        class="hero-image"
+        src="assets/mobile/image-hero@2x.jpg"
+        srcset="
+          assets/mobile/image-hero.jpg    1x,
+          assets/mobile/image-hero@2x.jpg 2x
+        "
+        alt=""
+      />
+    </picture>
+    <div class="header-content">
+      <div class="heading-text">
+        <div class="header-text-img-container">
+          <img src="assets/logo-light.svg" alt="" srcset="" />
+        </div>
+        <h1>
+          Modern<br />
+          Art Gallery
+        </h1>
+      </div>
+
+      <p>
+        The arts in the collection of the Modern Art Gallery all started from a
+        spark of inspiration. Will these pieces inspire you? <br />
+        Visit us and find out.
+      </p>
+      <a class="btn-container" href="location.html">
+        <span class="btn">Our location</span>
+        <img class="arrow" src="assets/icon-arrow-right.svg" alt="" />
+      </a>
+    </div>
+  </div>
+  <div class="white-background"></div>
+</header>

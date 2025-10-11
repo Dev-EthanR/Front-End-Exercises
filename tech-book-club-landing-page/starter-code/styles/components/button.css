@@ -1,0 +1,83 @@
+.btn {
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: 'Martian Mono', monospace;
+    font-weight: 700;
+    padding: 16px;
+    font-size: 1.8rem;
+    text-align: center;
+    text-transform: uppercase;
+    transition: background 0.3s ease, transform 0.3s ease-in;
+    user-select: none;
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 3rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.btn-primary {
+    border: 3px solid var(--primary-color);
+    background-color: rgb(255,245,239);
+    color: var(--primary-color);
+}
+
+.btn-dark {
+    border: 3px solid var(--white);
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+.btn-img-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.btn-img-dark {
+    /* Make svg icon black */
+    filter: brightness(0) saturate(100%) invert(12%) sepia(56%) saturate(608%) hue-rotate(143deg) brightness(96%) contrast(99%);
+}
+
+.btn-img-light {
+    /* make svg icon white */
+    filter: brightness(0) saturate(100%) invert(100%) sepia(50%) saturate(0%) hue-rotate(320deg) brightness(104%) contrast(101%);
+}
+
+.btn-primary:hover {
+    background: var(--gradient);
+}
+
+.btn-dark:hover {
+    background: linear-gradient(90deg, var(--body-color) 0%, var(--primary-color) 100%);
+}
+
+.btn:hover .btn-arrow-up,
+.btn:focus-within .btn-arrow-up {
+    transform: translateY(-5px); 
+}
+
+.btn:hover .btn-arrow-down,
+.btn:focus-within .btn-arrow-down {
+    transform: translateY(5px); 
+}
+ 
+.btn-primary:focus-within {
+    outline: 3px solid var(--body-color);
+    outline-offset: 3px;
+}
+
+.btn-dark:focus-within {
+    outline: 3px solid rgb(250,245,243);
+    outline-offset: 3px;
+}
+
+.btn-arrow-down .btn-arrow-up {
+    will-change: transform;
+}
+
+@media screen  and (max-width: 768px) {
+    .hero-btn {
+       max-width: 100%;
+    }
+}

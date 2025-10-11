@@ -1,0 +1,86 @@
+@import url(import.css);
+
+:root {
+    --text-gradient: linear-gradient(107deg, #FF9A60 -11.37%, #062630 61.84%);
+    --gradient: linear-gradient(90deg, #FFE2D1 0%, #FFF5EF 100%);
+    --primary-color: rgb(6, 38, 48);
+    --body-color: rgb(56, 81, 89);
+    --white: rgb(255, 255, 255);
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+} 
+
+h1, h2, h3 {
+    font-family: 'Martian Mono', monospace;
+    letter-spacing: -2px;
+    color: var(--primary-color);
+}
+
+h1 {
+    font-size: 3.8rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+h2 {
+    line-height: 1.3;
+    font-size: 3.4rem;
+    font-weight: 500;
+}
+
+h3 {
+    line-height: 1.1;
+    font-size: 2.4rem;
+    font-weight: 500;
+}
+
+body {
+    line-height: 1.4;
+    font-family: 'Inter';
+    font-size: 2rem;
+    letter-spacing: -0.5px;
+    color: var(--body-color);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:focus {
+    outline: none;
+}
+
+.content-image > img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+@media screen and (min-width: 768px) {
+    h1 {
+        font-size: 6.2rem;
+    }
+
+    h2 {
+        font-size: 5rem;
+    }
+
+    h3 {
+        font-size: 2.4rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .content-image > img {
+        max-width: 600px;
+    }
+}

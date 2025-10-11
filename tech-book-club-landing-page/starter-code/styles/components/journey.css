@@ -1,0 +1,80 @@
+.journey-container {
+    background: url(../../assets/images/pattern-light-bg.svg) no-repeat;
+    background-position: top left;
+    background-size: cover;
+    color: var(--primary-color);
+    padding: 4rem 2rem;
+    background-clip: padding-box;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(250,245,243);
+    margin-bottom: 2rem;
+}
+
+.journey-heading {
+    margin-bottom: 3rem;
+    max-width: 300px;
+}
+
+.number-box {
+    border: 2px solid var(--primary-color);
+    border-radius: 5px;
+    padding: 1.5rem;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    user-select: none;
+}
+
+.journey-text {
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.arrow-process > img {
+   display: none;
+}
+
+@media screen and (min-width: 600px) {
+    .journey-heading {
+        max-width: 400px;
+        margin-bottom: 5rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .journey-container {
+        margin: 0 auto 5rem;
+        max-width: 1024px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .journey-process, .arrow-process {
+        display: flex;
+        gap: 30px;
+    }
+
+    .arrow-process > img {
+        display: block;
+    }
+
+
+    .arrow-process {
+        justify-content: space-between;
+        margin-right: 1rem;
+    }
+    .journey-heading {
+        max-width: 550px;
+        text-align: center;
+    }
+    .journey-text {
+        max-width: 200px;
+    }
+}

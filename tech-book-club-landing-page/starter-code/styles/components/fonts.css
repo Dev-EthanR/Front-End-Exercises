@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'Inter';
+    src: url(../../assets/fonts/inter/Inter-VariableFont_opsz\,wght.ttf);
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url(../../assets/fonts/inter/Inter-Italic-VariableFont_opsz\,wght.ttf);
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url(../../assets/fonts/inter/static/Inter_18pt-SemiBold.ttf);
+    font-weight:bold;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Martian Mono';
+    src: url(../../assets/fonts/martian-mono/MartianMono-VariableFont_wdth\,wght.ttf);
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Martian Mono';
+    src: url(../../assets/fonts/martian-mono/static/MartianMono-SemiBold.ttf);
+    font-weight: bold;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Martian Mono';
+    src: url(../../assets/fonts/martian-mono/static/MartianMono-Bold.ttf);
+    font-weight: bolder;
+    font-display: swap;
+}

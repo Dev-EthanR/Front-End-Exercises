@@ -1,0 +1,39 @@
+.membership-container {
+    margin-bottom: 4rem;
+}
+.membership-heading {
+    margin-bottom: 2rem;
+}
+.popular {
+    background-color: rgb(250,245,243);
+    background-image: url(../../assets/images/pattern-glow.svg);
+}
+@media screen and (min-width: 600px) {
+    .membership-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .membership-container {
+        max-width: 1200px;
+        margin: 0 auto 4rem;
+    }
+    
+    .membership-heading {
+        text-align: center;
+        margin-bottom: 8rem;
+    }
+
+    .membership-content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
+    }
+
+    .popular {
+        transform: scale(1.1);
+    }
+}
+

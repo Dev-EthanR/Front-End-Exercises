@@ -75,8 +75,7 @@ body {
   text-align: center;
   word-spacing: 1px;
 }
-
-#avatar {
+.user #avatar {
   height: 30px;
   width: 30px;
 }/*# sourceMappingURL=styles.css.map */
